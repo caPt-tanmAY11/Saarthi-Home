@@ -44,7 +44,7 @@ const Sidebar: FC<SidebarProps> = ({ open, setOpen }) => {
         width: open ? 256 : 64,
       }}
       transition={{ type: "spring", stiffness: 120, damping: 20 }}
-      className="h-screen fixed top-0 left-0 flex flex-col justify-between text-white shadow-xl border-r border-white/10 bg-gradient-to-b from-black/75 via-black/70 to-black/80 backdrop-blur-xl overflow-hidden"
+      className="h-screen fixed top-0 left-0 flex flex-col justify-between text-white shadow-xl border-r border-white/10 bg-gradient-to-b from-black/75 via-black/70 to-black/80 backdrop-blur-xl overflow-hidden z-[9999]"
     >
       <div>
         <div className="flex items-center justify-between p-4 border-b border-white/10">
@@ -115,8 +115,8 @@ const Sidebar: FC<SidebarProps> = ({ open, setOpen }) => {
               transition={{ duration: 0.25 }}
               className="flex flex-col justify-center overflow-hidden"
             >
-              <span className="font-medium text-sm truncate">Devraj Sundari</span>
-              <span className="text-xs text-white/60 truncate">daddy@sundari.com</span>
+              <span className="font-medium text-sm truncate">Atharva Patil</span>
+              <span className="text-xs text-white/60 truncate">atharvapatil21@.com</span>
             </motion.div>
           )}
         </AnimatePresence>
